@@ -1,33 +1,29 @@
 import java.util.Date
 
-class Car {
-  var topClassExtraCost = 0
-  private var roadTax = 100
+class demoClass(val a:Int, val b:Int) {
+  var x = a
+  var y = b
 
   //Methods are defined within the class
 
-  def cost(basicCost: Int) = basicCost + topClassExtraCost + roadTax
+  def addNumber() = {
+    x + y
+  }
 
+  println(s"x= $x and y= $y")
+
+  val z=addNumber()
+
+  println(s"z =  ${z}")
 }
 
 object helloWorld {
 
   def main(args: Array[String]): Unit = {
-    println("Hello world!!")
 
-    var result = add(2, 5)
-    println("Addition result is : " + result)
+    val demoOne = new demoClass(4556,567576)
 
   }
 
-  var bmw = new Car
-
-  println(bmw.cost(45))
-
-  //This is function
-  def add(x: Int, y: Int) = {
-    var z = x + y
-    z
-  }
 
 }
